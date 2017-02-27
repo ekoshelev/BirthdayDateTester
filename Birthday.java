@@ -12,18 +12,18 @@ public class Birthday{
 	public static void getData(){ //This allows the user to put in a date, and then calls a method to print all the data.
 		int checkvalid = 0;
 		while (checkvalid == 0){ //This checks for an invalid date.
-		Scanner console= new Scanner(System.in);	
-		System.out.println("Write the month, day, and year were you born:");	
-		checkvalid=1;
-		int month = console.nextInt();
-		int day = console.nextInt();
-		int year = console.nextInt();
-		if (day > 31  || month > 12 || year < 1850){
-			System.out.println("Oops! That date is invalid, try again.");
-			checkvalid=0;
-		} else{
-			printBirthday(month,day,year); 
-		}
+			Scanner console= new Scanner(System.in);	
+			System.out.println("Write the month, day, and year were you born:");	
+			checkvalid=1;
+			int month = console.nextInt();
+			int day = console.nextInt();
+			int year = console.nextInt();
+			if (day > 31  || month > 12 || year < 1850){
+				System.out.println("Oops! That date is invalid, try again.");
+				checkvalid=0;
+			} else{
+				printBirthday(month,day,year); 
+			}
 		}
 	}
 	
